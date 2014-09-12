@@ -124,7 +124,7 @@ def load():
     try:
         with open("save.pickle", "rb") as f:
             bb = pickle.load(f)
-    except FileNotFoundError:
+    except (OSError, IOError) as e:
         bb = BB()
     except EOFError:
         logger.warning("Erreur lors du chargement de la sauvegarde. Réinitialisation.")

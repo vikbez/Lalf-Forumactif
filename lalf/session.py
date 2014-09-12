@@ -52,8 +52,13 @@ def _get(path, **kwargs):
     if "headers" not in kwargs:
         kwargs["headers"] = {}
     
-    kwargs["headers"]["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/25.0"
+    kwargs["headers"]["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/27.0"
     
+    # from pprint import pprint
+    # pprint(config)
+    # pprint(kwargs)
+    # pprint(path)
+
     return session.get(url(path), **kwargs)
     
 def connect():

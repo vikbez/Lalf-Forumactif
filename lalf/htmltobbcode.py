@@ -36,7 +36,7 @@ class HtmltobbcodeParser(HTMLParser):
 	
 	def handle_data(self, data):
 		if self.quote:
-			if data[-9:] == u" a écrit:":
+			if data[-9:] == " a écrit:":
 				self.author = data[:-9]
 			self.quote = False
 		else:

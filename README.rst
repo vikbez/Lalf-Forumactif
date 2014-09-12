@@ -81,6 +81,8 @@ Installez les dépendances suivantes :
 - `Requests <http://docs.python-requests.org/en/latest/>`_
 - `pypng <https://github.com/drj11/pypng>`_
 
+-> pip3 install pyquery requests pypng
+
 Téléchargez la dernière version du lalf et extrayez l'archive.
 
 Créez le fichier de configuration ``config.cfg`` en vous inspirant du

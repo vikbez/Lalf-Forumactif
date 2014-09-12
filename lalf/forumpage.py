@@ -61,7 +61,7 @@ class ForumPage(Node):
             id = int(re.search("/t(\d+)-.*", e("a").attr("href")).group(1))
             if id not in topicids:
                 f = e.parents().eq(-2)
-                locked = u"verrouillé" in f("td img").eq(0).attr("alt")
+                locked = "verrouillé" in f("td img").eq(0).attr("alt")
                 views = int(f("td").eq(5).text())
                 type = e("strong").text()
                 title = e("a").text()

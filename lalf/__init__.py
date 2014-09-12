@@ -17,6 +17,7 @@
 # along with Lalf.  If not, see <http://www.gnu.org/licenses/>.
 
 import logging
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger("lalf")
 logger.setLevel(logging.DEBUG)
 
